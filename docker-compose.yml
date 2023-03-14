@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+  database:
+    image: postgres
+    container_name: database_desafio
+    restart: always
+    ports:
+      - 2345:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_DB=desafio
+    volumes:
+      - pgdata:/data/postgres
+  app:
+    build: .
+    container_name: api_desafio
+    ports: 
+      - 5000:5000
+    volumes:
+      - .:/usr/app
+    links:
+      - database
+    depends_on:
+      - database
+
+volumes:
+  pgdata:
+    driver: local
