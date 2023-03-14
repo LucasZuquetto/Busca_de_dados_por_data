@@ -1,6 +1,6 @@
 ## Como rodar o projeto localmente
-1. Crie uma pasta
-2. Dentro dessa pasta, clone esse repositório
+1. Faça um clone desse repositório
+2. Entre na pasta que foi criada 
 3. Caso não possua o Docker instalado na sua máquina, instale o Docker - Tutorial: https://docs.docker.com/get-docker/
 4. Rode o comando
 ```bash
