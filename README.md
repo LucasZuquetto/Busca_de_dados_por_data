@@ -1,12 +1,20 @@
 ## Como rodar o projeto localmente
 1. Faça um clone desse repositório
 2. Entre na pasta que foi criada 
-3. Caso não possua o Docker instalado na sua máquina, instale o Docker - Tutorial: https://docs.docker.com/get-docker/
-4. Rode o comando
+3. Rode o comando
+```bash
+npm install
+```
+4.Rode o comando e não feche o terminal
+```bash
+npm run dev
+```
+5. Caso não possua o Docker instalado na sua máquina, instale o Docker - Tutorial: https://docs.docker.com/get-docker/
+6. Em outro terminal, rode o comando
 ```bash
 docker-compose up --build
 ```
-5. Após isso, você pode acessar a API através de http://localhost:5000/
+7. Após isso, você pode acessar a API através de http://localhost:5000/
 
 ## Documentação
 ### POST /register
