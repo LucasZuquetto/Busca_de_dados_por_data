@@ -1,7 +1,7 @@
 ## Como rodar o projeto localmente
 1. Faça um clone desse repositório
 2. Entre na pasta que foi criada 
-3. Rode o comando
+3. Certifique-se de possuir uma versão recente do node e rode o comando
 ```bash
 npm install
 ```
