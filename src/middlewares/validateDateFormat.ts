@@ -23,8 +23,6 @@ export default function validateDateFormat(
     return res.status(400).send("endDate must be greater than startDate")
    }
 
-   console.log(dayjs(startDate).isAfter(endDate))
-
    res.locals.startDate = startDate
    res.locals.endDate = endDate
 

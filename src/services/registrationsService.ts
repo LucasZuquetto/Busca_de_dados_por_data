@@ -14,11 +14,9 @@ export async function registerUserService(userData: UserData) {
    return await insertUser(userData);
 }
 
-export async function getUsersService(startDate: any, endDate: any) {
-   let start = startDate?.toString();
-   let end = endDate?.toString();
-   start = dayjs(start).format();
-   end = dayjs(end).format();
+export async function getUsersService(startDate: string, endDate: string) {
+   const start = dayjs(startDate).format();
+   const end = dayjs(endDate).format();
 
    return await getUsersByDate(start, end);
 }

@@ -22,5 +22,7 @@ export default function validateBody(
       return res.sendStatus(422);
    }
 
+   res.locals.userData = userData
+
    next();
 }

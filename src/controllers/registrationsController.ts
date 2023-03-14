@@ -5,10 +5,10 @@ import {
 import { Request, Response } from "express";
 
 export async function registerUserController(req: Request, res: Response) {
-   const userData = req.body;
+   const { userData } = res.locals;
    try {
-      const result = await registerUserService(userData);
-      return res.status(200).send(result);
+      await registerUserService(userData);
+      return res.sendStatus(200);
    } catch (error: any) {
       if (error.message === "Conflict") {
          return res.sendStatus(409);
