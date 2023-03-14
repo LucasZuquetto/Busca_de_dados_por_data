@@ -40,7 +40,7 @@ Body:
  Obs: MM/DD/YYYY é o molde para uma data no formato mês/dia/ano, como por exemplo: 03/14/2023
  
  Resposta:
- -Caso startDate ou endDate não esteja no formato MM/DD/YYYY :
+ - Caso startDate ou endDate não esteja no formato MM/DD/YYYY :
  ```json
  "status":422
  ```
