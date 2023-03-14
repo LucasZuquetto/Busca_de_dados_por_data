@@ -10,3 +10,14 @@ export async function insertUser(userObject: UserData) {
       data: userObject,
    });
 }
+
+export async function getUsersByDate(startDate:string, endDate:string){
+   return await prisma.forms_answers.findMany({
+      where:{
+         created_at:{
+            lte:endDate,
+            gte:startDate
+         }
+      }
+   })
+}
