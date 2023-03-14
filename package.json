@@ -1,27 +1,28 @@
 {
-  "name": "desafio_precato",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/express": "^4.17.17",
-    "@types/node": "^18.15.2",
-    "prisma": "^3.14.0",
-    "ts-node-dev": "^2.0.0",
-    "tsconfig-paths": "^4.1.2",
-    "typescript": "^4.9.5"
-  },
-  "dependencies": {
-    "@prisma/client": "^4.11.0",
-    "dayjs": "^1.11.7",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2"
-  }
+   "name": "desafio_precato",
+   "version": "1.0.0",
+   "description": "",
+   "main": "dist/index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "nodemon src/server.ts"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "@types/express": "^4.17.17",
+      "@types/node": "^18.15.2",
+      "prisma": "^4.7.1",
+      "ts-node-dev": "^2.0.0",
+      "tsconfig-paths": "^4.1.2",
+      "typescript": "^4.9.5"
+   },
+   "dependencies": {
+      "@prisma/client": "^4.7.1",
+      "dayjs": "^1.11.7",
+      "dotenv": "^16.0.3",
+      "dotenv-expand": "^8.0.3",
+      "express": "^4.18.2"
+   }
 }

@@ -3,5 +3,4 @@ export type UserData = {
    email: string;
    cpf: string;
    phone: string;
-   created_at: string;
 };
